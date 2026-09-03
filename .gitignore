@@ -30,8 +30,6 @@ cython_debug/
 .env
 
 # environment (ignore one, use the other)
-# environment.yml
-requirements.txt
 
 # Gradescope/autograder files
 # autograder    **UNCOMMENT ON EXERCISE REPO**
