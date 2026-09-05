@@ -42,12 +42,12 @@ print(palindrome("Sit on a potato pan, Otis"))  # Expected output: True
 print(palindrome("Gibberish"))  # Expected output: False
 
 
-def parentheses_checker(input_string):
+def parentheses(sequence):
     """
     Check if the parentheses in a string are balanced.
 
     Args:
-        input_string (str): The string to check.
+        sequence (str): The string to check.
 
     Returns:
         bool: True if the parentheses are balanced, False otherwise.
@@ -61,7 +61,7 @@ def parentheses_checker(input_string):
 
     # iterate through the string, tracking the number of opening and
     # closing parentheses
-    for char in input_string:
+    for char in sequence:
         if char != '(' and char != ')':
             continue  # Ignore non-parenthesis characters
         elif char == '(':
@@ -82,8 +82,8 @@ def parentheses_checker(input_string):
 
 
 # Test Cases
-print(parentheses_checker("((blah)()()())"))  # True
-print(parentheses_checker("(((())blee))"))  # True
-print(parentheses_checker("(()hello((())()))"))  # True
-print(parentheses_checker("((((((())"))  # False
-print(parentheses_checker("()))"))  # False
+print(parentheses("((blah)()()())"))  # True
+print(parentheses("(((())blee))"))  # True
+print(parentheses("(()hello((())()))"))  # True
+print(parentheses("((((((())"))  # False
+print(parentheses("()))"))  # False
